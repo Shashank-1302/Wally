@@ -52,18 +52,21 @@ class _SearchState extends State<Search> {
     return Scaffold(
       appBar: AppBar(
         title: brandName(),
-        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
+        backgroundColor: Color.fromARGB(249, 47, 47, 47),
         elevation: 0.0,
         actions: <Widget>[
           Container(
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Icon(
                 Icons.add,
-                color: Colors.white,
+                color: Color.fromARGB(249, 47, 47, 47),
               ))
         ],
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(249, 47, 47, 47),
       body: SingleChildScrollView(
         child: Container(
           child: Column(
@@ -102,11 +105,6 @@ class _SearchState extends State<Search> {
                     )
                   ],
                 ),
-              ),
-              FloatingActionButton(
-                onPressed: _increment,
-                tooltip: 'Refresh',
-                child: new Icon(Icons.refresh),
               ),
               SizedBox(
                 height: 30,

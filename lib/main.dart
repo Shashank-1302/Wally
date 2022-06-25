@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
-        backgroundColor: Color.fromARGB(247, 36, 36, 85),
-        splash: Image.asset('assest/logo.gif'),
+        backgroundColor: Colors.white,
+        splash: Image.asset('assest/logo.png'),
         nextScreen: Home(),
         splashIconSize: 900,
         splashTransition: SplashTransition.fadeTransition,

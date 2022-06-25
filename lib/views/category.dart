@@ -42,18 +42,21 @@ class _CategoryState extends State<Category> {
     return Scaffold(
       appBar: AppBar(
         title: brandName(),
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(249, 47, 47, 47),
+        iconTheme: IconThemeData(
+          color: Colors.white, //change your color here
+        ),
         elevation: 0.0,
         actions: <Widget>[
           Container(
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Icon(
                 Icons.add,
-                color: Colors.white,
+                color: Color.fromARGB(249, 47, 47, 47),
               ))
         ],
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(249, 47, 47, 47),
       body: SingleChildScrollView(
         child: Container(
           child: Column(

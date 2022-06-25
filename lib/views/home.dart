@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
@@ -54,10 +55,10 @@ class _HomeState extends State<Home> {
     return Scaffold(
         appBar: AppBar(
           title: brandName(),
-          backgroundColor: Colors.white,
+          backgroundColor: Color.fromARGB(249, 47, 47, 47),
           elevation: 0.0,
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(249, 47, 47, 47),
         body: SingleChildScrollView(
             child: Container(
           child: Column(children: <Widget>[
@@ -94,10 +95,24 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(
-              height: 16,
+              height: 10,
             ),
+
+            Text(
+              "Categories:",
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: "PermanentMarker",
+                  fontWeight: FontWeight.w400,
+                  fontSize: 25),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+
             Container(
-              height: 80,
+              height: 60,
               child: ListView.builder(
                 padding: EdgeInsets.symmetric(horizontal: 24),
                 itemCount: categories.length,
@@ -111,14 +126,21 @@ class _HomeState extends State<Home> {
                 },
               ),
             ),
+            Text(
+              "Trendings:",
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: "PermanentMarker",
+                  fontWeight: FontWeight.w400,
+                  fontSize: 25),
+            ),
+
             // FloatingActionButton(
             // onPressed: _increment,
             // tooltip: 'Refresh',
             // child: new Icon(Icons.refresh),
             //),
-            SizedBox(
-              height: 14,
-            ),
             wallPaperList(wallpapers, context),
           ]),
         )));

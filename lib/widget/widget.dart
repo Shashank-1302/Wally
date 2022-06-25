@@ -11,7 +11,7 @@ Widget brandName() {
       Text(
         "Wal",
         style: TextStyle(
-            color: Colors.black, fontFamily: 'PermanentMarker', fontSize: 30),
+            color: Colors.white, fontFamily: 'PermanentMarker', fontSize: 30),
       ),
       Text(
         "ly",
